@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Weathermac Franklin Weather">
+        <title>Weathermech | StormCenter</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main-7.css"> <!-- Small -->
+        <link rel="stylesheet" href="styles/medium-7.css">
+        <link rel="stylesheet" href="styles/large-7.css">
+        <link rel="stylesheet" href="styles/storm.css">
+    </head>
+
+    <body class="content">
+        <header>
+            <img id="logo" src="images/Logo.png" alt="Weathermech Logo">
+            <h1>Weathermech</h1>
+            <h2>Informing you before the trip</h2>
+        </header>
+
+        <nav>
+            <ul class="topnav" id="topnav">
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin-8.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <button>&#9776;</button>
+                </a>
+            </ul>
+        </nav>
+        <main>
+            <h1>Insert the following information about a storm!</h1>
+            <form action="thanks.html" method="get">
+                <div>
+                    <label for="fullName">Full Name: </label>
+                    <input type="text" id="fullName" name="fullName" pattern="[A-Za-z -]{5,}" title="minimum of 5 characters" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" name="email" placeholder="name@email.com" title="Email">
+                </div>
+                <div>
+                    <label for="phoneNumber">Phone Number: </label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+                <div>
+                    <label for="zipCode">Zip Code: </label>
+                    <input type="number" id="zipCode" name="zipCode" required>
+                </div>
+                <div>
+                    <label for="stormDate">Storm Date: </label>
+                    <input type="date" id="stormDate" name="stormDate">
+                </div>
+                <div>
+                    <label for="stormType">Storm Type: </label>
+                    <input list="stormTypelist" id="stormType" name="stormType">
+                    <datalist id="stormTypelist">
+                        <option value="FLash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="stormSeverity">Storm Severity: </label>
+                    <span id="stormRating">5</span>
+                    <input type="range" id="stormSeverity" name="stormSeverity" value="5" min="1" max="10" step="1" oninput="stormRating(this.value)" onchange="stormRating(this.value)">
+                </div>
+                <div>
+                    <label for="stormRegion">Storm Region: </label>
+                    <select name="stormRegion" id="stormRegion">
+                        <option value="0" disabled>Select a Region</option>
+                        <option value="1">Franklin</option>
+                        <option value="2">Greenville</option>
+                        <option value="3">Springfield</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="danger">Are you in danger?:</label><br>
+                    <input type="radio" id="danger" name="danger" value="Yes"> Yes<br>
+                    <input type="radio" id="danger" name="danger" value="Maybe" checked> Maybe <br>
+                    <input type="radio" id="danger" name="danger" value="No"> No <br>
+                </div>
+                <div>
+                    <label for="comment">Comments: </label><br>
+                    <textarea id="comment" name="comment" cols="50" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" id="submit" name="submit">
+                </div>
+
+            </form>
+        </main>
+        <footer>
+            <section class="contact">
+                <p>Contact information placeholder</p> <p>999.999.9999</p>
+                <p>123 Main St. Anytown, US 99999</p> <p>Google Map</p>
+            </section>
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | Weathermech | <span id="currentdate"></span>
+            </section>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/curretdate.js"></script>
+        <script src="scripts/severityslider.js"></script>
+
+    </body>

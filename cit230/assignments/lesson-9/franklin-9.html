@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Weathermac Franklin Weather">
+        <title>Weathermech | Franklin</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/main-7.css"> <!-- Small -->
+        <link rel="stylesheet" href="styles/medium-7.css">
+        <link rel="stylesheet" href="styles/large-7.css">
+    </head>
+
+    <body class="content">
+
+        <header>
+            <img id="logo" src="images/Logo.png" alt="Weathermech Logo">
+            <h1>Weathermech</h1>
+            <h2>Informing you before the trip</h2>
+        </header>
+
+        <nav>
+            <ul class="topnav" id="topnav">
+                <li><a href="#">Home</a></li>
+                <li><a href="franklin-9.html">Franklin</a></li>
+                <li><a href="#">Greenville</a></li>
+                <li><a href="#">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-9.html">Gallery</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <button>&#9776;</button>
+                </a>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Franklin</h2>
+            <figure id="sidepicture">
+                <img src="images/franklin-original-large.jpg" alt="Valley with the sun poking out" srcset="images/franklin-original-small.jpg 400w, images/franklin-original-med.jpg 800w, images/franklin-original-large.jpg 1200w">
+            </figure>
+            <h3>Weather Summary</h3>
+            <section class="weather-summary">
+
+                <div class="highlow">
+                    <p>High:68</p>
+                    <p>Low:44</p>
+                </div>
+                <div class="current">
+                    Sunny
+                    <picture>
+                        <img id="sun" src="images/Sol.png" alt="Picture of the sun">
+                    </picture>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation:3%</p>
+                    <p>Wind Speed:14mph</p>
+                    <p>Wind Chill: <span id="windchill"></span>&deg;</p>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>Ten Day Forecast</h3>
+                <table align="center">
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <h3>Franklin Breaks Record</h3>
+            <article>
+               <section id="articleimg">
+                <img id="thermometer" src="images/thermometer.jpg" alt="A thermometer">
+                </section>
+                <section id="articletext">
+                <p>Filler text</p>
+                </section>
+            </article>
+
+        </main>
+
+        <footer>
+            <section class="contact">
+                <p>Contact information placeholder</p> <p>999.999.9999</p>
+                <p>123 Main St. Anytown, US 99999</p> <p>Google Map</p>
+            </section>
+            <section class="footer-bar">&copy;2018 | All Rights Reserved | Weathermech | <span id="currentdate"></span>
+            </section>
+        </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/curretdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+
+</html>
