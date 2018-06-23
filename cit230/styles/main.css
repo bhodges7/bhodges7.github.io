@@ -50,3 +50,27 @@ ul
     padding: 1rem;
     text-align: center;
 }
+.articlestory
+{
+    display: flex;
+    flex-direction: row;
+    min-width: 25em;
+    margin: 10px auto;
+}
+.articleimg
+{
+    width:32.5%;
+}
+.mainheader {
+    margin-bottom: 20px;
+}
+section.para {
+
+}
+.para {
+    text-align: center;
+}
+.images {
+    width: 300px;
+    margin-top: 15px;
+}
