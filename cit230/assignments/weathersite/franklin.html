@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head w3-include-html="modules/head.html">
+        <title>Weathermech | Franklin</title>
+    </head>
+    <body class="content">
+
+        <header w3-include-html="modules/header.html">
+
+        </header>
+
+        <nav w3-include-html="modules/nav.html"></nav>
+
+        <main>
+            <h2>Franklin</h2>
+            <figure id="sidepicture">
+                <img src="images/franklin-original-large.jpg" alt="Valley with the sun poking out" srcset="images/franklin-original-small.jpg 400w, images/franklin-original-med.jpg 800w, images/franklin-original-large.jpg 1200w">
+            </figure>
+            <h3>Weather Summary</h3>
+            <section class="weather-summary">
+
+                <div class="highlow">
+                    <p>High:68</p>
+                    <p>Low:44</p>
+                </div>
+                <div class="current">
+                    Sunny
+                    <picture>
+                        <img id="sun" src="images/Sol.png" alt="Picture of the sun">
+                    </picture>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation:3%</p>
+                    <p>Wind Speed:14mph</p>
+                    <p>Wind Chill: <span id="windchill"></span>&deg;</p>
+                </div>
+            </section>
+
+            <section class="forecast">
+                <h3>Ten Day Forecast</h3>
+                <table align="center">
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <h3>Franklin Breaks Record</h3>
+            <article>
+                <section id="articleimg">
+                    <img id="thermometer" src="images/thermometer.jpg" alt="A thermometer">
+                </section>
+                <section id="articletext">
+                    <p>Filler text</p>
+                </section>
+            </article>
+
+        </main>
+
+        <footer w3-include-html="modules/footer.html"></footer>
+        <script src="scripts/wayfinding.js"></script>
+        <script src="scripts/w3.js"></script>
+        <script src="scripts/modularize.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
+
+</html>
