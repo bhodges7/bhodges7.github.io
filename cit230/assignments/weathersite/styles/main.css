@@ -130,7 +130,7 @@ section.forecast
 
 #sun
 {
-    width: 110px;
+    width: 100px;
     height: 100px;
 }
 .content
@@ -217,4 +217,12 @@ td{
     float: none;
     display: block;
     text-align: left;
+}
+.articleevents
+{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
 }

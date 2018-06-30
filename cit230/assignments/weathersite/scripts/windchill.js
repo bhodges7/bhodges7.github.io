@@ -6,3 +6,10 @@
 
 
 document.getElementById("windchill").innerHTML = f.toFixed(2);
+
+
+
+
+
+
+//get the data from weatherthing *challenge

@@ -11,3 +11,10 @@ label {
     min-width: 100px;
     display: inline-block;
 }
+ {
+    padding: 0.35em 0.75em 0.625em;
+}
+form
+{
+    text-align: center;
+}

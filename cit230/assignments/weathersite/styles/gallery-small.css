@@ -71,6 +71,10 @@ nav ul li a:hover
     color: #FF69B4;
 
 }
+nav ul li.active a {
+    background-color: #fffeee;
+}
+
 main h2 {
     margin-top: 0px;
     margin-bottom: 0px;
