@@ -1,0 +1,7 @@
+@media only screen and (min-width: 1024px)
+{
+    section#gallery-container{
+        grid-template-columns: 300px 300px 300px;
+        align-content: space-around;
+    }
+}

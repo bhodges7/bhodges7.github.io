@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head w3-include-html="modules/head.html">
+        <link rel="stylesheet" href="styles/storm.css">
+        <title>Weathermech | StormCenter</title>
+    </head>
+
+    <body class="content">
+        <header w3-include-html="modules/header.html"></header>
+
+            <nav w3-include-html="modules/nav.html"></nav>
+        <main>
+            <h1>Insert the following information about a storm!</h1>
+            <form action="thanks.html" method="get">
+                <div>
+                    <label for="fullName">Full Name: </label>
+                    <input type="text" id="fullName" name="fullName" pattern="[A-Za-z -]{5,}" title="minimum of 5 characters" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" name="email" placeholder="name@email.com" title="Email">
+                </div>
+                <div>
+                    <label for="phoneNumber">Phone Number: </label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+                <div>
+                    <label for="zipCode">Zip Code: </label>
+                    <input type="number" id="zipCode" name="zipCode" required>
+                </div>
+                <div>
+                    <label for="stormDate">Storm Date: </label>
+                    <input type="date" id="stormDate" name="stormDate">
+                </div>
+                <div>
+                    <label for="stormType">Storm Type: </label>
+                    <input list="stormTypelist" id="stormType" name="stormType">
+                    <datalist id="stormTypelist">
+                        <option value="FLash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="stormSeverity">Storm Severity: </label>
+                    <span id="stormRating">5</span>
+                    <input type="range" id="stormSeverity" name="stormSeverity" value="5" min="1" max="10" step="1" oninput="stormRating(this.value)" onchange="stormRating(this.value)">
+                </div>
+                <div>
+                    <label for="stormRegion">Storm Region: </label>
+                    <select name="stormRegion" id="stormRegion">
+                        <option value="0" disabled>Select a Region</option>
+                        <option value="1">Franklin</option>
+                        <option value="2">Greenville</option>
+                        <option value="3">Springfield</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="danger">Are you in danger?:</label><br>
+                    <input type="radio" id="danger" name="danger" value="Yes"> Yes<br>
+                    <input type="radio" id="danger" name="danger" value="Maybe" checked> Maybe <br>
+                    <input type="radio" id="danger" name="danger" value="No"> No <br>
+                </div>
+                <div>
+                    <label for="comment">Comments: </label><br>
+                    <textarea id="comment" name="comment" cols="50" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" id="submit" name="submit">
+                </div>
+
+            </form>
+        </main>
+
+        <footer w3-include-html="modules/footer.html"></footer>
+        <script src="scripts/wayfinding.js"></script>
+        <script src="scripts/w3.js"></script>
+        <script src="scripts/modularize.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/severityslider.js"></script>
+
+    </body>
+</html>
