@@ -1,0 +1,199 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+@import url('https://fonts.googleapis.com/css?family=Playfair + Display ');
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    background-color: #ffffff;
+}
+
+header, nav, main, footer {
+    max-width: 100%;
+}
+
+header {
+
+}
+header h1  {
+
+    position:relative;
+    left: 20px;
+    margin-top: 10px;
+
+}
+header img {
+    position: relative;
+    background-color: none;
+    float:left;
+    width: 115px;
+    height: 110px;
+    border-style: none;
+
+}
+header h2 {
+    position: relative;
+    left: 20px;
+    margin-top: 10px;
+
+}
+
+nav {
+    font-size 1.4em;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+nav button {
+    background:none;
+}
+nav ul {
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #778899;
+    overflow:hidden;
+    list-style-type: none;
+}
+nav ul hide{
+    display: none;
+}
+nav ul li {}
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: underline;
+    background-color: #708090;
+}
+nav ul li.active a {
+    color: #0B0080;
+}
+nav ul li a:hover
+{
+    color: #FF69B4;
+
+}
+
+main {
+
+}
+main h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #e7e5df;
+}
+main figure {
+    margin: 0 0 .2rem 2%; width:96%;
+}
+main figure img
+{
+    height: 200px;
+    width 100%;
+}
+main h3 {
+    text-align: center;
+    font-size 24px;
+    background-color: #e7e5df;
+}
+footer {
+    text-align: center;
+}
+.highlow
+{
+    justify-content: center;
+    text-align: center;
+
+}
+section.forecast
+{
+    display: none;
+}
+#logo
+{
+
+}
+#thermometer
+{
+    width: 110px;
+    height: 100px;
+}
+#sun
+{
+    width: 110px;
+    height: 100px;
+}
+#content
+{
+    max-width: 960px;
+    margin: 0 auto;
+}
+current{
+    justify-content: flex-start;
+}
+.weather-summary
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.conditions
+{
+    text-align:center;
+
+}
+
+.forecast
+{
+    display: block;
+}
+table, tr, td, th
+{
+    text-align: center;
+    border: 1px solid black;
+}
+th{
+    padding:0 10px 0 10px;
+}
+td{
+    padding: 10px;
+}
+
+.town-article
+{
+    font-size: 1.2rem;
+    vertical-align: text-top;
+    min-height: 200px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+
+}
+main article img
+{
+    max-width: 200px;
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+}
+
+.contact
+{
+    background-color: #e7e5df;
+
+}
+.footer-bar
+{
+    background-color:#A9A9A9;
+
+}
+
+
+
+
